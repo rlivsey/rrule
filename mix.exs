@@ -14,7 +14,7 @@ defmodule RRule.Mixfile do
   #
   # Type "mix help compile.app" for more information
   def application do
-    [applications: [:logger]]
+    [applications: [:logger, :timex]]
   end
 
   # Dependencies can be Hex packages:
@@ -27,6 +27,8 @@ defmodule RRule.Mixfile do
   #
   # Type "mix help deps" for more examples and options
   defp deps do
-    []
+    [
+      {:timex, "~> 3.1.5"}
+    ]
   end
 end
