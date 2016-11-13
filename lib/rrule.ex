@@ -1,4 +1,5 @@
 defmodule RRule do
+  @enforce_keys [:freq]
   defstruct [:freq, :dtstart, :count, :interval, :bymonth, :bymonthday, :byweekday, :byyearday, :byweekno, :byeaster, :byhour, :byminute, :bysecond, :bysetpos, :until, :wkst]
 
   def occurrence_before(_rrule, _time) do

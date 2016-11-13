@@ -424,7 +424,9 @@ defmodule RRuleTest do
   end
 
   test "yearlyByEaster" do
-    %RRule{ count: 3,
+    %RRule{
+      freq: :yearly,
+      count: 3,
       byeaster: 0,
       dtstart: to_datetime({{1997, 9, 2}, {9, 0, 0}})
     }
