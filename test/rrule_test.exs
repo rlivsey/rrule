@@ -404,7 +404,7 @@ defmodule RRuleTest do
       freq: :yearly,
       count: 3,
       byweekno: 1,
-      byweekday: RRule.MO,
+      byweekday: :monday,
       dtstart: to_datetime({{1997, 9, 2}, {9, 0, 0}})
     }
     |> RRule.occurrences
@@ -505,7 +505,7 @@ defmodule RRuleTest do
       freq: :yearly,
       count: 3,
       byweekno: 53,
-      byweekday: RRule.MO,
+      byweekday: :monday,
       dtstart: to_datetime({{1997, 9, 2}, {9, 0, 0}})
     }
     |> RRule.occurrences
@@ -975,7 +975,7 @@ defmodule RRuleTest do
       freq: :monthly,
       count: 3,
       byweekno: 1,
-      byweekday: RRule.MO,
+      byweekday: :monday,
       dtstart: to_datetime({{1997, 9, 2}, {9, 0, 0}})
     }
     |> RRule.occurrences
@@ -1028,7 +1028,7 @@ defmodule RRuleTest do
       freq: :monthly,
       count: 3,
       byweekno: 53,
-      byweekday: RRule.MO,
+      byweekday: :monday,
       dtstart: to_datetime({{1997, 9, 2}, {9, 0, 0}})
     }
     |> RRule.occurrences
@@ -1550,7 +1550,7 @@ defmodule RRuleTest do
       freq: RRule.WEEKLY,
       count: 3,
       byweekno: 1,
-      byweekday: RRule.MO,
+      byweekday: :monday,
       dtstart: to_datetime({{1997, 9, 2}, {9, 0, 0}})
     }
     |> RRule.occurrences
@@ -1603,7 +1603,7 @@ defmodule RRuleTest do
       freq: RRule.WEEKLY,
       count: 3,
       byweekno: 53,
-      byweekday: RRule.MO,
+      byweekday: :monday,
       dtstart: to_datetime({{1997, 9, 2}, {9, 0, 0}})
     }
     |> RRule.occurrences
@@ -2088,7 +2088,7 @@ defmodule RRuleTest do
       freq: :daily,
       count: 3,
       byweekno: 1,
-      byweekday: RRule.MO,
+      byweekday: :monday,
       dtstart: to_datetime({{1997, 9, 2}, {9, 0, 0}})
     }
     |> RRule.occurrences
@@ -2141,7 +2141,7 @@ defmodule RRuleTest do
       freq: :daily,
       count: 3,
       byweekno: 53,
-      byweekday: RRule.MO,
+      byweekday: :monday,
       dtstart: to_datetime({{1997, 9, 2}, {9, 0, 0}})
     }
     |> RRule.occurrences
@@ -2624,7 +2624,7 @@ defmodule RRuleTest do
       freq: :hourly,
       count: 3,
       byweekno: 1,
-      byweekday: RRule.MO,
+      byweekday: :monday,
       dtstart: to_datetime({{1997, 9, 2}, {9, 0, 0}})
     }
     |> RRule.occurrences
@@ -2675,7 +2675,7 @@ defmodule RRuleTest do
       freq: :hourly,
       count: 3,
       byweekno: 53,
-      byweekday: RRule.MO,
+      byweekday: :monday,
       dtstart: to_datetime({{1997, 9, 2}, {9, 0, 0}})
     }
     |> RRule.occurrences
@@ -3158,7 +3158,7 @@ defmodule RRuleTest do
       freq: :minutely,
       count: 3,
       byweekno: 1,
-      byweekday: RRule.MO,
+      byweekday: :monday,
       dtstart: to_datetime({{1997, 9, 2}, {9, 0, 0}})
     }
     |> RRule.occurrences
@@ -3209,7 +3209,7 @@ defmodule RRuleTest do
       freq: :minutely,
       count: 3,
       byweekno: 53,
-      byweekday: RRule.MO,
+      byweekday: :monday,
       dtstart: to_datetime({{1997, 9, 2}, {9, 0, 0}})
     }
     |> RRule.occurrences
@@ -3691,7 +3691,7 @@ defmodule RRuleTest do
       freq: :secondly,
       count: 3,
       byweekno: 1,
-      byweekday: RRule.MO,
+      byweekday: :monday,
       dtstart: to_datetime({{1997, 9, 2}, {9, 0, 0}})
     }
     |> RRule.occurrences
@@ -3742,7 +3742,7 @@ defmodule RRuleTest do
       freq: :secondly,
       count: 3,
       byweekno: 53,
-      byweekday: RRule.MO,
+      byweekday: :monday,
       dtstart: to_datetime({{1997, 9, 2}, {9, 0, 0}})
     }
     |> RRule.occurrences
@@ -3999,7 +3999,7 @@ defmodule RRuleTest do
       count: 3,
       interval: 2,
       byweekday: [:tuesday, :sunday],
-      wkst: RRule.MO,
+      wkst: :monday,
       dtstart: to_datetime({{1997, 9, 2}, {9, 0, 0}})
     }
     |> RRule.occurrences
